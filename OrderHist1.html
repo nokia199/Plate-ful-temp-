@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Order History</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100">
+    <div id="app"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="flex flex-col items-center">
+                    <div className="w-full bg-gray-800 p-4 flex justify-between items-center">
+                        <img src="plate-ful-logo.png" alt="Logo with vegetables and hands" className="h-12 w-12"/>
+                        <button className="bg-gray-300 text-gray-800 py-2 px-4 rounded">SIGN OUT</button>
+                    </div>
+                    <div className="bg-white p-4 mt-4 w-80 shadow-md">
+                        <img src="chicken.jpeg" alt="Malai Chicken dish" className="w-full mb-4"/>
+                        <div className="text-gray-800">
+                            <p>1 x Malai Chicken : 195₹</p>
+                            <p>1 x Steamed Rice : 30₹</p>
+                            <p className="mt-4">Order ID: NGOWDA114</p>
+                            <p>Restaurant: Nusa-Tropical Brewvilla, 560087</p>
+                            <p>Total: 245₹</p>
+                        </div>
+                        <p className="text-right text-gray-600 text-sm mt-4">11:36 PM 10/11/2024</p>
+                    </div>
+                    <p className="mt-4 text-gray-800">END OF ORDER HISTORY</p>
+                    <div className="w-full bg-gray-800 p-4 mt-12 flex justify-between items-center">
+                        <div className="text-white">
+                            <p>Contact Us:</p>
+                            <p>plateful123@gmail.com</p>
+                            <p>+91 9632822056</p>
+                        </div>
+                        <i className="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
